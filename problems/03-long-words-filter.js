@@ -15,7 +15,14 @@ console.log(longWords(['couscous', 'soup', 'ceviche', 'solyanka' ,'taco'])); // 
 
 let longWords = function(words) {
     // Your code here 
-};
+    let result = []
+    const resultArr = words.filter((e) => {
+      if (e.length > 5) {
+        result.push(e);
+      }
+    })
+    return result;
+  }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
